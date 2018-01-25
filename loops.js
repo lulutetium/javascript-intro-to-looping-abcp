@@ -25,6 +25,6 @@ function doWhileLoop(array){
 
   do {
     l=l-1;
-  } while (l > 0 && !maybeTrue());
+  } while (l>0 && !!maybeTrue());
   return array;
 }
