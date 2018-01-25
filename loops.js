@@ -21,10 +21,13 @@ function doWhileLoop(array){
   function maybeTrue() {
   return Math.random() >= 0.5;
   }
-  var l = array.length;
+  var l = array[1];
+  var newArr = [];
+  console.log(newArr);
 
   do {
+    console.log(l);
     l=l-1;
-  } while (l>0 && !!maybeTrue());
-  return array;
+  } while (!!l && !!maybeTrue());
+  return newArr;
 }
